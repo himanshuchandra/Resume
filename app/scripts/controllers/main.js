@@ -2,16 +2,12 @@
 
 /**
  * @ngdoc function
- * @name resApp.controller:MainCtrl
+ * @name resumeApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the resApp
+ * Controller of the resumeApp
  */
-angular.module('resApp')
+angular.module('resumeApp')
   .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    
   });

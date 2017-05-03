@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc overview
- * @name resApp
+ * @name resumeApp
  * @description
- * # resApp
+ * # resumeApp
  *
  * Main module of the application.
  */
 angular
-  .module('resApp', [
+  .module('resumeApp', [
     'ngAnimate'
   ]);

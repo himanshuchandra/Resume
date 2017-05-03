@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Himanshu Chandra</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -12,45 +12,36 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <!--<link rel="stylesheet" href="styles/main.css">-->
+    <link rel="stylesheet" href="styles/styles.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="resApp">
+  <body ng-app="resumeApp">
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
+  <div><img src="images/nameFull.png" class="img-responsive name" style="position: fixed ;z-index: 1;" class="name"></div>
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-
-            <a class="navbar-brand" href="#/">res</a>
-          </div>
-
-          <div class="collapse navbar-collapse" id="js-navbar-collapse">
-
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
+  <div class="parallax">
+      <!--<img src="images/basenew.png" class="base">-->
+        <div>
+            <ul id="scene" class="scene">
+                <li class="layer" data-depth="0.00"><img src="images/layer1.png" class="l1Base"></li>
+    			      <li class="layer" data-depth="0.20"><img src="images/inkPatch.png" class="img-responsive" class="l2Inkpatch"></li>
+                <li class="layer" data-depth="0.30"><img src="images/uiuxNew.png" class="img-responsive" class="name"></li>
+                <!--<li class="layer" data-depth="0.30"><img src="images/layer3circle.png" class="img-responsive" class="l3Circle"></li>-->
+                <!--<li class="layer" data-depth="0.30"><img src="images/centreText.png" class="img-responsive" class="l3Circle"></li>-->
+                <li class="layer" data-depth="0.40"><img src="images/inkadd.png" class="img-responsive" class="l4Ink1"></li>
+                <li class="layer" data-depth="0.40"><img src="images/layer4richinksrgbweb.png" class="img-responsive" class="l4Ink1"></li>
+    			      <li class="layer" data-depth="0.50"><img src="images/layer5richinksrgbweb.png" class="img-responsive" class="l5Ink2"></li>
             </ul>
-          </div>
         </div>
-      </div>
-    </div>
+   </div>
 
-    <div class="container">
+    <!--<div class="container">
     <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
-    </div>
+    </div>-->
 
     <div class="footer">
       <div class="container">
@@ -81,7 +72,13 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <script src="scripts/libraries/parallax.min.js"></script>
+        <script src="scripts/parallax.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <!--<script>
+	   var scene = document.getElementById('scene');
+	   var parallax = new Parallax(scene);
+	</script>    -->
         <!-- endbuild -->
 </body>
 </html>
