@@ -34,6 +34,13 @@ ul{
     height:100px;
     width:250px;*/
 }
+
+.fb{
+    position: fixed;
+    z-index: 1;
+    top: 400px;
+    left: 1200px;
+}
 /*
 .l2Inkpatch{
     margin-left: 100px;
