@@ -4,6 +4,15 @@ html, body{
     height:100%;
 }
 
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('fonts/Above.ttf'),format('truetype');
+    src: local("☺"),
+        url("fonts/Above.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*.parallax{
     position: fixed;
     z-index: -1;
@@ -12,13 +21,18 @@ html, body{
     width: 100%;
 }*/
 
+/*.parallax{
+    position: absolute;
+    z-index: -1;
+}*/
+
 .l1Base{
-    position:relative;
+    position:inherit;
     left:0px;
     right:0px;
     top:0px;
     width:100%;
-    height:1000px;
+    height:700px;
 }
 
 ul{
@@ -26,20 +40,74 @@ ul{
     margin-left: 0px;
 }
 
-.name{
+.nameWhite{
     position:fixed;
-    z-index: 1;
+    z-index:1;
     /*top:50px;
     left:50px;
     height:100px;
     width:250px;*/
 }
 
-.fb{
-    position: fixed;
+.nameCrimson{
+    position:fixed;
+    z-index:0;
+    /*top:50px;
+    left:50px;
+    height:100px;
+    width:250px;*/
+}
+
+.social{
+    position: absolute;
     z-index: 1;
-    top: 400px;
-    left: 1200px;
+    left: 90%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+.fb{
+    top: 55%;
+}
+
+.git{
+    top: 70%;
+}
+
+.in{
+    top: 85%;
+}
+
+.test{
+    background-color:white;
+    height: 400px;
+    width: 400px;
+}
+
+.fbFooter{
+    position: absolute;
+    left:70%;
+    bottom:20%;
+    z-index: 2;
+    height: 50px;
+}
+
+.gitFooter{
+    position: absolute;
+    left:78%;
+    bottom:27%;
+    z-index: 2;
+    height: 50px;
+}
+
+.inFooter{
+    position: absolute;
+    left:90%;
+    bottom:0%;
+    z-index: 2;
+    height: 65px;
+    /*width: 72px*/
 }
 /*
 .l2Inkpatch{
@@ -61,13 +129,13 @@ ul{
     height:500px
 }*/
 
-.top{
+/*.top{
     z-index:3;
 }
 
 .jumbotron{
     padding-top: 500px;
-}
+}*/
 
 /*.box{
     position: relative;
@@ -83,3 +151,15 @@ ul{
     height: 200px;
     width: 300px;
 }*/
+
+
+.footer{
+    background-color: #2C2627;
+    position: relative;
+    height: 200px;
+    width: 100%;
+    bottom: 0%; 
+    z-index: 1;
+    font-family: 'MyWebFont';
+    color: white;
+}

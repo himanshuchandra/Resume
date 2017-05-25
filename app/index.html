@@ -16,19 +16,20 @@
     <link rel="stylesheet" href="styles/styles.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="resumeApp">
+  <body ng-app="resumeApp" ng-controller="MainCtrl">
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-  <div><img src="images/nameFull.png" class="img-responsive name"></div>
-  <a href="https://github.com/himanshuchandra" class="fb"><img src="images/fb.png" class="img-responsive"></a>
+  <div ng-hide="name.White"><img src="images/nameWhite.png" class="img-responsive nameWhite"></div>
+  <div ng-hide="name.Crimson"><img src="images/nameCrimson.png" class="img-responsive nameCrimson"></div>
+  <!--<a href="https://github.com/himanshuchandra" class="fb"><img src="images/fb.png" class="img-responsive"></a>-->
 
   <div class="parallax">
       <!--<img src="images/basenew.png" class="base">-->
         <div>
             <ul id="scene" class="scene">
-                <li class="layer" data-depth="0.00"><img src="images/layer1.png" class="l1Base"></li>
+                <li class="layer" data-depth="0.00"><img src="images/crimsonBase.png" class="l1Base"></li>
     			      <li class="layer" data-depth="0.20"><img src="images/inkPatch.png" class="img-responsive" class="l2Inkpatch"></li>
                 <li class="layer" data-depth="0.30"><img src="images/uiuxNew.png" class="img-responsive" class="uiux"></li>
                 <!--<li class="layer" data-depth="0.30"><img src="images/layer3circle.png" class="img-responsive" class="l3Circle"></li>-->
@@ -40,20 +41,31 @@
         </div>
    </div>
 
-   <a href="https://github.com/himanshuchandra" class="img-responsive fb"><img src="images/fb.png"></a>
-   <a href="https://github.com/himanshuchandra" class="git"><img src="images/git.png" class="img-responsive"></a>
-   <a href="https://github.com/himanshuchandra" class="in"><img src="images/in.png" class="img-responsive"></a>
+   <a href="https://facebook.com/himanshu.chandra.777" class="social fb"><img src="images/fb.png" class="img-responsive"></a>
+   <a href="https://github.com/himanshuchandra" class="social git"><img src="images/git.png" class="img-responsive"></a>
+   <a href="https://linkedin.com/in/himanshu-chandra/" class="social in"><img src="images/in.png" class="img-responsive"></a>
 
+   <div class="test"></div>
+   <div class="test"></div>
+   <div class="test"></div>
+   <div class="test"></div>
     <!--<div class="container">
     <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
-    </div>-->
+    </div-->
 
-    <div class="footer">
+    <!--<div class="footer">
       <div class="container">
         <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
       </div>
-    </div>
+    </div>-->
 
+    <div class="footer">
+      <p>Wanna work together or talk about tech?</p><br>
+      <p>Feel free to contact</p>
+      <a href="https://facebook.com/himanshu.chandra.777" class="fbFooter"><img src="images/fbFooter.png" class="img-responsive"></a>
+      <a href="https://github.com/himanshuchandra" class="gitFooter"><img src="images/gitFooter.png" class="img-responsive"></a>
+      <a href="https://linkedin.com/in/himanshu-chandra/" class="inFooter"><img src="images/inFooter.png" class="img-responsive"></a>
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
